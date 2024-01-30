@@ -24,6 +24,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Create artifacts directory
+        run: mkdir -p ./artifacts
+
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
